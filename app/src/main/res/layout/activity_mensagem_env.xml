@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcc.fernanda.tcc.Cadastro.MensagemEnv">
+
+
+    <TextView
+        android:id="@+id/txtMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="36dp"
+        android:text="Assunto da Mensagem:" />
+
+    <TextView
+        android:id="@+id/txtDescricaoM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtMensagem"
+        android:layout_alignStart="@+id/txtMensagem"
+        android:layout_below="@+id/txtMensagem"
+        android:layout_marginTop="62dp"
+        android:text="Texto da Mensagem:" />
+
+    <EditText
+        android:id="@+id/idAssuntoMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDescricaoM"
+        android:layout_alignStart="@+id/txtDescricaoM"
+        android:layout_below="@+id/txtMensagem"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/idMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDescricaoM"
+        android:layout_alignStart="@+id/txtDescricaoM"
+        android:layout_below="@+id/txtDescricaoM"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btn_voltar_CM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idMensagem"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/idMensagem"
+        android:layout_marginBottom="48dp"
+        android:text="@string/Voltar" />
+
+    <Button
+        android:id="@+id/btn_cad_CM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_voltar_CM"
+        android:layout_alignBottom="@+id/btn_voltar_CM"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="@string/Cadastrar" />
+
+    <TextView
+        android:id="@+id/txtMensagemPessoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idMensagem"
+        android:layout_alignStart="@+id/idMensagem"
+        android:layout_below="@+id/idMensagem"
+        android:layout_marginTop="32dp"
+        android:text="Para:" />
+
+    <Spinner
+        android:id="@+id/idSpinnerMensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtMensagemPessoa"
+        android:layout_marginTop="14dp" />
+</RelativeLayout>

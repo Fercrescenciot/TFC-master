@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "640463127510",
+    "firebase_url": "https://engtcc-779dd.firebaseio.com",
+    "project_id": "engtcc-779dd",
+    "storage_bucket": "engtcc-779dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640463127510:android:4e268edfeef09c34",
+        "android_client_info": {
+          "package_name": "com.tcc.fernanda.tcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640463127510-qerit48t1d732c0okvr2vcp5oamb9jf0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tcc.fernanda.tcc",
+            "certificate_hash": "b36d44a91c41c8f4350ea8813da9e05e7125e8e9"
+          }
+        },
+        {
+          "client_id": "640463127510-mkvetl7136cd4mlc2qikmjjpc9v29a8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAaNV6pqws_nrAC9IXnl44Z1x3s9e5mhk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640463127510-mkvetl7136cd4mlc2qikmjjpc9v29a8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcc.fernanda.tcc.Cadastro.CadastroSemestres">
+
+
+    <TextView
+        android:id="@+id/txtDataSemestre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="57dp"
+        android:text="Ano:" />
+
+    <TextView
+        android:id="@+id/txtSemstre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDataSemestre"
+        android:layout_alignStart="@+id/txtDataSemestre"
+        android:layout_below="@+id/txtDataSemestre"
+        android:layout_marginTop="72dp"
+        android:text="Semestre" />
+
+    <EditText
+        android:id="@+id/idDataSemestre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtSemstre"
+        android:layout_alignStart="@+id/txtSemstre"
+        android:layout_below="@+id/txtDataSemestre"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btn_cad_CS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_voltar_CS"
+        android:layout_marginEnd="71dp"
+        android:allowUndo="true"
+        android:text="@string/Cadastrar" />
+
+    <Spinner
+        android:id="@+id/idSpinnerSemestres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtSemstre" />
+
+    <Button
+        android:id="@+id/btn_voltar_CS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="74dp"
+        android:layout_marginStart="50dp"
+        android:text="Voltar" />
+</RelativeLayout>

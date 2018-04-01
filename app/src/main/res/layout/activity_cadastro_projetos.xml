@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcc.fernanda.tcc.Cadastro.CadastroProjetos">
+
+    <TextView
+        android:id="@+id/txtNomeProjeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="33dp"
+        android:text="Nome do Projeto:" />
+
+    <TextView
+        android:id="@+id/txtDescricaoP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNomeProjeto"
+        android:layout_alignStart="@+id/txtNomeProjeto"
+        android:layout_below="@+id/txtNomeProjeto"
+        android:layout_marginTop="65dp"
+        android:text="Descriçao do Projeto:  " />
+
+    <CheckBox
+        android:id="@+id/checkBoxProjeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDescricaoP"
+        android:layout_alignStart="@+id/txtDescricaoP"
+        android:layout_below="@+id/txtDescricaoP"
+        android:layout_marginTop="79dp"
+        android:text="Ativo" />
+
+    <EditText
+        android:id="@+id/idNomeProjeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNomeProjeto"
+        android:layout_alignStart="@+id/txtNomeProjeto"
+        android:layout_below="@+id/txtNomeProjeto"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/idDescricaoProjetos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxProjeto"
+        android:layout_alignStart="@+id/checkBoxProjeto"
+        android:layout_below="@+id/txtDescricaoP"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/txtDataSemestre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/checkBoxProjeto"
+        android:layout_alignRight="@+id/checkBoxProjeto"
+        android:layout_below="@+id/checkBoxProjeto"
+        android:layout_marginTop="30dp"
+        android:text="Semestre:" />
+
+    <Button
+        android:id="@+id/btn_cad_CP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:text="@string/Cadastrar" />
+
+    <Button
+        android:id="@+id/btn_voltar_CP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtNomeProjeto"
+        android:layout_alignRight="@+id/txtNomeProjeto"
+        android:layout_alignTop="@+id/btn_cad_CP"
+        android:text="@string/Voltar" />
+
+    <Spinner
+        android:id="@+id/idSpinnerProjetos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtDataSemestre" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDataSemestre"
+        android:layout_alignStart="@+id/txtDataSemestre"
+        android:layout_below="@+id/idSpinnerProjetos"
+        android:layout_marginTop="15dp"
+        android:text="Alunos:" />
+
+    <Spinner
+        android:id="@+id/idSpinnerAlunosPJ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>

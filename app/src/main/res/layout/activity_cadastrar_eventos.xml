@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcc.fernanda.tcc.Cadastro.CadastrarEventos">
+
+
+    <TextView
+        android:id="@+id/txtNomeEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:text="Nome do evento:" />
+
+    <TextView
+        android:id="@+id/txtDataevento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNomeEvento"
+        android:layout_alignStart="@+id/txtNomeEvento"
+        android:layout_below="@+id/txtNomeEvento"
+        android:layout_marginTop="53dp"
+        android:text="Data do evento:" />
+
+    <TextView
+        android:id="@+id/txtLocalevento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDataevento"
+        android:layout_alignStart="@+id/txtDataevento"
+        android:layout_below="@+id/txtDataevento"
+        android:layout_marginTop="46dp"
+        android:text="Local do Evento:" />
+
+    <CheckBox
+        android:id="@+id/checkBoxEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtDataevento"
+        android:layout_alignRight="@+id/txtDataevento"
+        android:layout_below="@+id/idLocalEvento"
+        android:text="CheckBox" />
+
+    <TextView
+        android:id="@+id/txtDescricaoE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxEvento"
+        android:layout_alignStart="@+id/checkBoxEvento"
+        android:layout_below="@+id/checkBoxEvento"
+        android:layout_marginTop="24dp"
+        android:text="Descriçao do evento:" />
+
+    <TextView
+        android:id="@+id/txtParticipantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idDescricaoEvento"
+        android:layout_alignStart="@+id/idDescricaoEvento"
+        android:layout_below="@+id/idDescricaoEvento"
+        android:text="Participantes" />
+
+    <EditText
+        android:id="@+id/idNomeEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNomeEvento"
+        android:layout_alignStart="@+id/txtNomeEvento"
+        android:layout_below="@+id/txtNomeEvento"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/idDataEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/idNomeEvento"
+        android:layout_alignRight="@+id/idNomeEvento"
+        android:layout_below="@+id/txtDataevento"
+        android:ems="10"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/idLocalEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLocalevento"
+        android:layout_alignStart="@+id/txtLocalevento"
+        android:layout_below="@+id/txtLocalevento"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/idDescricaoEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/idLocalEvento"
+        android:layout_alignRight="@+id/idLocalEvento"
+        android:layout_below="@+id/txtDescricaoE"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btn_voltar_CE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtNomeEvento"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtNomeEvento"
+        android:layout_marginBottom="18dp"
+        android:text="@string/Voltar" />
+
+    <Button
+        android:id="@+id/btn_cad_CE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_voltar_CE"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@+id/txtDescricaoE"
+        android:layout_toRightOf="@+id/txtDescricaoE"
+        android:text="@string/Cadastrar" />
+
+    <Spinner
+        android:id="@+id/idSpinnerEventos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtParticipantes" />
+</RelativeLayout>
